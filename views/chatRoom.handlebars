@@ -1,0 +1,31 @@
+<div class="container">
+    <h1>Chat room</h1>
+    <ul id="list">
+        {{#each chat}}
+        {{#each dialogue}}
+        <div class="send-cont">
+        <h3>{{sender.firstname}}</h3>
+        <p>{{senderMessage}}</p>
+        <small>{{date}}</small>
+        </div>
+        
+        
+        {{#if receiverMessage}}
+        <div class="rec-cont">
+        <h3>{{receiver.firstname}}</h3>
+        <p>{{receiverMessage}}</p>
+        <small>{{date}}</small>
+        </div>
+        {{else}}
+        {{/if}}
+       
+        {{/each}}
+        {{else}}
+        <p>No messages</p>
+        {{/each}}
+    </ul>
+    <form action ="/chat/{{chat._id}}" method="POST">
+        <input type="text" name="message" class="form-control">
+        <button type="submit" class="btn btn-primary btn-2">Send</button>
+    </form>
+</div>

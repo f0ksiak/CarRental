@@ -1,0 +1,39 @@
+{
+  "name": "final_project",
+  "version": "1.0.0",
+  "description": "Bartosz Brzózka\r Jędrzej Garbacz\r Maciej Bronowicki\r Dominik Drabik\r Cezary Czerniecki",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ms-wsb/final_project.git"
+  },
+  "author": "BB JG MB DD CC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ms-wsb/final_project/issues"
+  },
+  "homepage": "https://github.com/ms-wsb/final_project#readme",
+  "dependencies": {
+    "aws-sdk": "^2.922.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "config": "3.3.1",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "express-session": "^1.17.2",
+    "formidable": "^1.2.2",
+    "mongoose": "^5.12.11",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0",
+    "passport": "^0.4.1",
+    "passport-facebook": "^3.0.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
